@@ -24,7 +24,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 		${PROJECT_SOURCE_DIR}/include/print
 		${PROJECT_SOURCE_DIR}/include/scopetimer
 		${PROJECT_SOURCE_DIR}/include/stopwatch
-		${PROJECT_SOURCE_DIR}/include/thread_pool
 )
 
 target_link_libraries(ogga PUBLIC Threads::Threads)
