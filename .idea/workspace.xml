@@ -20,9 +20,8 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="oggaLib" targetName="thread_pool" />
-      <config projectName="oggaLib" targetName="print" />
-      <config projectName="oggaLib" targetName="stopwatch" />
+      <config projectName="ogga" targetName="ogga" />
+      <config projectName="ogga" targetName="ogga_tests" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -34,7 +33,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="" />
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/include/scopetimer/ogga/scopetimer.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/thread_pool/ogga/element_type.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dummy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/scopetimerTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cmake.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cmake.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/print/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/print/include/element_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/element_type/ogga/element_type.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/print/include/print.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/print/ogga/print.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/print/src/printTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/printTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stopwatch/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stopwatch/include/stopwatch.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/stopwatch/ogga/stopwatch.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stopwatch/src/stopwatchTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/stopwatchTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/thread_pool/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/thread_pool/include/thread_pool.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/thread_pool/ogga/thread_pool.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/thread_pool/src/thread_poolTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/thread_poolTest.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,11 +65,17 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:OggaDebug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;0gga&quot;
+  }
+}</component>
   <component name="GitLabMergeRequestFiltersHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPENED&quot;,
@@ -64,14 +92,24 @@
     &quot;second&quot;: &quot;eecea205-3cbe-4958-b7b2-7637b50b1076&quot;
   }
 }</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/0gga/oggaLib.git&quot;,
+    &quot;accountId&quot;: &quot;f892b73e-1667-4106-afd7-df6951e28507&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/TCP/TcpConnection.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/TCP/TcpConnection.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/TCP/TcpServer.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/TCP/TcpServer.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/include/Reader.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/src/Reader.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.source/asioServer/src/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/element_type/ogga/element_type.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/print/ogga/print.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/scopetimer/ogga/scopetimer.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/stopwatch/ogga/stopwatch.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/thread_pool/ogga/thread_pool.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/dummy.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/printTest.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/scopetimerTest.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/stopwatchTest.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/thread_poolTest.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="NamedScopeManager">
     <order>
@@ -85,6 +123,7 @@
   <component name="ProjectId" id="344By5D2B34eUXLbI0ZtaDqgy3t" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -95,6 +134,8 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "CMake Application.asioServer.executor": "Run",
     "CMake Application.build_unix.executor": "Run",
+    "CMake Application.ogga.executor": "Run",
+    "CMake Application.ogga_tests.executor": "Run",
     "CMake Application.print.executor": "Run",
     "CMake Application.stopwatch.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -102,19 +143,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/source/t_pool/include",
+    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/include/thread_pool",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C++",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
@@ -127,37 +169,32 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\source\t_pool\include" />
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\source" />
-      <recent name="C:\Users\oscar\source\.repos\SW3PRJ3\.source\asioServer" />
-      <recent name="C:\Users\oscar\source\.repos\SW3PRJ3\.source\client" />
-      <recent name="C:\Users\oscar\source\.repos\SW3PRJ3\.source\asioServer\TCP" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\thread_pool" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\stopwatch" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\scopetimer" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\print" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\ogga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\source\print\src" />
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\source" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib" />
-      <recent name="C:\Users\oscar\source\.repos\SW3PRJ3\Diagrams" />
-      <recent name="C:\Users\oscar\source\.repos\SW3PRJ3\.source\asioServer\bin" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\thread_pool\ogga" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\stopwatch\ogga" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\scopetimer\ogga" />
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\element_type\ogga" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.stopwatch">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager" selected="CMake Application.ogga_tests">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ogga" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="OGGA_DEV=1" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ogga" TARGET_NAME="ogga" CONFIG_NAME="OggaDebug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="print" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="oggaLib" TARGET_NAME="print" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="oggaLib" RUN_TARGET_NAME="print">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stopwatch" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="oggaLib" TARGET_NAME="stopwatch" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="oggaLib" RUN_TARGET_NAME="stopwatch">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="thread_pool" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="oggaLib" TARGET_NAME="thread_pool" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="oggaLib" RUN_TARGET_NAME="thread_pool">
+    <configuration name="ogga_tests" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ogga" TARGET_NAME="ogga_tests" CONFIG_NAME="OggaDebug" RUN_TARGET_PROJECT_NAME="ogga" RUN_TARGET_NAME="ogga_tests">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -294,9 +331,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake Application.print" />
-      <item itemvalue="CMake Application.stopwatch" />
-      <item itemvalue="CMake Application.thread_pool" />
+      <item itemvalue="CMake Application.ogga" />
+      <item itemvalue="CMake Application.ogga_tests" />
     </list>
   </component>
   <component name="TaskManager">
@@ -327,7 +363,8 @@
       <workItem from="1762446696508" duration="5995000" />
       <workItem from="1762464833278" duration="11000" />
       <workItem from="1762541491058" duration="345000" />
-      <workItem from="1762542136000" duration="18803000" />
+      <workItem from="1762542136000" duration="18815000" />
+      <workItem from="1762599406277" duration="10001000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -646,6 +683,13 @@
     <MESSAGE value="Use strands in read/write for ACID compliance." />
     <MESSAGE value="Minor fixes." />
     <option name="LAST_COMMIT_MESSAGE" value="Minor fixes." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

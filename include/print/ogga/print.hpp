@@ -1,5 +1,5 @@
 #pragma once
-#include "element_type.hpp"
+#include "ogga/element_type.hpp"
 #include <iostream>
 #include <type_traits>
 
@@ -8,8 +8,8 @@ namespace ogga {
 	constexpr void stream_one(std::ostream& os, const T& value) noexcept {
 		if constexpr (requires { os << value; })
 			os << value;
-		else if constexpr (std::is_pointer_v<T> && std::is_arithmetic_v<std::remove_pointer<T>>)
-			os << *value;
+		else if constexpr (std::is_pointer_v<T>)
+			os << (value ? value : "nullptr");
 		else if constexpr (requires { std::begin(value); std::end(value); }) {
 			os << "[ ";
 			for (auto it = value.begin(); it != value.end(); ++it) {

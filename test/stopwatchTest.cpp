@@ -1,8 +1,9 @@
 ﻿#include <iostream>
 
-#include "stopwatch.hpp"
+#include "ogga/stopwatch.hpp"
 
-int main() {
+void stopwatchTest() {
+	std::cout << "################# stopwatch Test #################" << "\n\n";
 	ogga::stopwatch timer;
 	for (int i{}; i < INT_MAX; i++);
 	timer.stop();
@@ -11,6 +12,5 @@ int main() {
 	std::cout << timer.microseconds() << "\n";
 	std::cout << timer.milliseconds() << "\n";
 	std::cout << timer.seconds() << "\n";
-
-	return 0;
+	std::cout << "\n################# stopwatch Test #################" << "\n";
 }

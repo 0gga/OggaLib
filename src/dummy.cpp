@@ -1,0 +1,1 @@
+int ogga_dummy_link_anchor = 0;

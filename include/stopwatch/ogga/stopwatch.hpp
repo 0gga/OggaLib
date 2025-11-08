@@ -5,11 +5,11 @@
 namespace ogga {
 	class stopwatch {
 	public:
-		stopwatch() noexcept : start_(clock::now()) {}
+		stopwatch() noexcept : start_(clock_t::now()) {}
 
-		void reset() noexcept;
-		void stop() noexcept;
 		void start() noexcept;
+		void stop() noexcept;
+		void reset() noexcept;
 
 		[[nodiscard]] std::string hours() const noexcept;
 		[[nodiscard]] std::string minutes() const noexcept;
@@ -19,31 +19,31 @@ namespace ogga {
 		[[nodiscard]] std::string nanoseconds() const noexcept;
 
 	private:
-		using clock = std::chrono::steady_clock;
-		clock::time_point start_;
-		clock::time_point stopped_;
+		using clock_t = std::chrono::steady_clock;
+		clock_t::time_point start_;
+		clock_t::time_point stopped_;
 
 		template<typename T>
 		[[nodiscard]] std::string to_string(const char* suffix) const noexcept {
-			auto duration = std::chrono::duration_cast<T>((stopped_ == clock::time_point{} ? clock::now() : stopped_) - start_).count();
+			auto duration = std::chrono::duration_cast<T>((stopped_ == clock_t::time_point{} ? clock_t::now() : stopped_) - start_).count();
 			return std::to_string(duration) + suffix;
 		}
 	};
 
-	inline void stopwatch::reset() noexcept {
-		start_   = clock::now();
-		stopped_ = clock::time_point{};
+	inline void stopwatch::start() noexcept {
+		if (stopped_ != clock_t::time_point{}) {
+			start_ += clock_t::now() - stopped_;
+			stopped_ = clock_t::time_point{};
+		}
 	}
 
 	inline void stopwatch::stop() noexcept {
-		stopped_ = clock::now();
+		stopped_ = clock_t::now();
 	}
 
-	inline void stopwatch::start() noexcept {
-		if (stopped_ != clock::time_point{}) {
-			start_ += clock::now() - stopped_;
-			stopped_ = clock::time_point{};
-		}
+	inline void stopwatch::reset() noexcept {
+		start_   = clock_t::now();
+		stopped_ = clock_t::time_point{};
 	}
 
 	inline std::string stopwatch::hours() const noexcept {
