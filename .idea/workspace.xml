@@ -33,11 +33,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="tests implemented, scopetimer fixed. %n functionality added to print for containers.">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="stability fixes for print">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/print/ogga/print.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/print/ogga/print.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/print_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/print_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,44 +112,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "CMake Application.asioServer.executor": "Run",
-    "CMake Application.build_unix.executor": "Run",
-    "CMake Application.ogga.executor": "Run",
-    "CMake Application.ogga_tests.executor": "Run",
-    "CMake Application.print.executor": "Run",
-    "CMake Application.stopwatch.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/include/thread_pool",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;CMake Application.asioServer.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.build_unix.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.ogga.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.ogga_tests.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.print.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.stopwatch.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oscar/source/.repos/0ggaLib/include/thread_pool&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\thread_pool" />
@@ -168,11 +167,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.ogga_tests">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ogga" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="OGGA_DEV=1" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ogga" TARGET_NAME="ogga" CONFIG_NAME="OggaDebug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -348,7 +342,9 @@
       <workItem from="1762464833278" duration="11000" />
       <workItem from="1762541491058" duration="345000" />
       <workItem from="1762542136000" duration="18815000" />
-      <workItem from="1762599406277" duration="18046000" />
+      <workItem from="1762599406277" duration="18349000" />
+      <workItem from="1762634841384" duration="62000" />
+      <workItem from="1762634916132" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -662,7 +658,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762615938635</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="stability fixes for print">
+      <option name="closed" value="true" />
+      <created>1762618557221</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1762618557221</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -725,7 +729,8 @@
     <MESSAGE value="CMake setup for easy .gitmodules setup.&#10;See readme for more." />
     <MESSAGE value="readme fixes" />
     <MESSAGE value="tests implemented, scopetimer fixed. %n functionality added to print for containers." />
-    <option name="LAST_COMMIT_MESSAGE" value="tests implemented, scopetimer fixed. %n functionality added to print for containers." />
+    <MESSAGE value="stability fixes for print" />
+    <option name="LAST_COMMIT_MESSAGE" value="stability fixes for print" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

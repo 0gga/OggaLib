@@ -2,7 +2,7 @@
 #include <string>
 #include <chrono>
 
-#include "ogga/stopwatch.hpp"
+#include "stopwatch.hpp"
 
 namespace ogga {
 	class scopetimer {

@@ -7,4 +7,5 @@
 >    path = extern/ogga  
 >    url = https://github.com/0gga/oggaLib.git
 >```
-> Run `git submodule update --init --recursive` in root to clone dependencies:
+> Run `git submodule add https://github.com/0gga/oggaLib.git extern/ogga` in root to add to .git/config  
+> Then run `git submodule update --init --recursive`
