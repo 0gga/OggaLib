@@ -4,6 +4,8 @@
 
 #include "ogga/print.hpp"
 
+#include "ogga/scopetimer.hpp"
+
 void print_test() {
 	std::cout << "################# print Test #################" << "\n\n";
 	std::vector<int> vector;
