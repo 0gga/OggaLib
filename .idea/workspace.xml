@@ -33,29 +33,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/scopetimer/ogga/scopetimer.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/thread_pool/ogga/element_type.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dummy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/scopetimerTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cmake.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cmake.xml" afterDir="false" />
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="CMake setup for easy .gitmodules setup.&#10;See readme for more.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/print/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/print/include/element_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/element_type/ogga/element_type.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/print/include/print.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/print/ogga/print.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/print/src/printTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/printTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stopwatch/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stopwatch/include/stopwatch.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/stopwatch/ogga/stopwatch.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stopwatch/src/stopwatchTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/stopwatchTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/thread_pool/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/thread_pool/include/thread_pool.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/thread_pool/ogga/thread_pool.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/thread_pool/src/thread_poolTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/thread_poolTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +344,7 @@
       <workItem from="1762464833278" duration="11000" />
       <workItem from="1762541491058" duration="345000" />
       <workItem from="1762542136000" duration="18815000" />
-      <workItem from="1762599406277" duration="10001000" />
+      <workItem from="1762599406277" duration="10438000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -622,7 +602,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762449786564</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="CMake setup for easy .gitmodules setup.&#10;See readme for more.">
+      <option name="closed" value="true" />
+      <created>1762610484568</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1762610484568</updated>
+    </task>
+    <task id="LOCAL-00034" summary="CMake setup for easy .gitmodules setup.&#10;See readme for more.">
+      <option name="closed" value="true" />
+      <created>1762610488730</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1762610488730</updated>
+    </task>
+    <task id="LOCAL-00035" summary="CMake setup for easy .gitmodules setup.&#10;See readme for more.">
+      <option name="closed" value="true" />
+      <created>1762610528439</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1762610528439</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +686,8 @@
     <MESSAGE value="Fixes" />
     <MESSAGE value="Use strands in read/write for ACID compliance." />
     <MESSAGE value="Minor fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes." />
+    <MESSAGE value="CMake setup for easy .gitmodules setup.&#10;See readme for more." />
+    <option name="LAST_COMMIT_MESSAGE" value="CMake setup for easy .gitmodules setup.&#10;See readme for more." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
