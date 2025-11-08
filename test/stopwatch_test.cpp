@@ -2,7 +2,7 @@
 
 #include "ogga/stopwatch.hpp"
 
-void stopwatchTest() {
+void stopwatch_test() {
 	std::cout << "################# stopwatch Test #################" << "\n\n";
 	ogga::stopwatch timer;
 	for (int i{}; i < INT_MAX; i++);

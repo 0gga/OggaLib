@@ -2,7 +2,7 @@
 
 #include "ogga/scopetimer.hpp"
 
-void scopetimerTest() {
+void scopetimer_test() {
 	std::cout << "################# scopetimer Test #################" << "\n\n";
 	{
 		ogga::scopetimer timer("compute");

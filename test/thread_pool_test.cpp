@@ -1,6 +1,6 @@
 ﻿#include "ogga/thread_pool.hpp"
 
-void thread_poolTest() {
+void thread_pool_test() {
 
 
 }

@@ -1,13 +1,13 @@
 #ifdef OGGA_DEV
 #include <iostream>
 
-void printTest();
-void scopetimerTest();
-void stopwatchTest();
-void thread_poolTest();
+void print_test();
+void scopetimer_test();
+void stopwatch_test();
+void thread_pool_test();
 
 int main() {
-	printTest();
+	print_test();
 
 	return 0;
 }

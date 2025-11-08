@@ -33,9 +33,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="CMake setup for easy .gitmodules setup.&#10;See readme for more.">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="readme fixes">
+      <change afterPath="$PROJECT_DIR$/test/print_test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/print/ogga/print.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/print/ogga/print.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/printTest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/scopetimerTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/scopetimer_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/stopwatchTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/stopwatch_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/thread_poolTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/thread_pool_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +350,7 @@
       <workItem from="1762464833278" duration="11000" />
       <workItem from="1762541491058" duration="345000" />
       <workItem from="1762542136000" duration="18815000" />
-      <workItem from="1762599406277" duration="10438000" />
+      <workItem from="1762599406277" duration="14371000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -626,7 +632,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762610528439</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="readme fixes">
+      <option name="closed" value="true" />
+      <created>1762610868216</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1762610868216</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +701,8 @@
     <MESSAGE value="Use strands in read/write for ACID compliance." />
     <MESSAGE value="Minor fixes." />
     <MESSAGE value="CMake setup for easy .gitmodules setup.&#10;See readme for more." />
-    <option name="LAST_COMMIT_MESSAGE" value="CMake setup for easy .gitmodules setup.&#10;See readme for more." />
+    <MESSAGE value="readme fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
