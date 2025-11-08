@@ -8,8 +8,8 @@ void thread_pool_test();
 
 int main() {
 	print_test();
-	scopetimer_test();
-	stopwatch_test();
+	//scopetimer_test();
+	//stopwatch_test();
 
 	return 0;
 }

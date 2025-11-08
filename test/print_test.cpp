@@ -30,7 +30,7 @@ void print_test() {
 	std::string string{"\nString: string"};
 	constexpr char charArr[] = "const char[] -> const char*";
 
-	ogga::print("Int: ", 1, "\nDouble: ", 1.1, "\nInt* ref: ", intptr, "\nInt* deref: ", *intptr);
+	ogga::print("Int: ", 1, "\nDouble: ", 2.2, "\nInt* deref: ", *intptr, "\nInt* ref: ", intptr);
 	ogga::print(charArr, string, "\nchar: ", 'c');
 	ogga::print("Vector<literals>: ", vector, '\n', "Deque<int*>: ", deque);
 	ogga::print("pair: ", std::pair<char, std::string>('a', "bcd"));
