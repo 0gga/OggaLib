@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-#include "../include/ogga/scopetimer.hpp"
+#include "ogga/scopetimer.hpp"
 
 void scopetimer_test() {
 	std::cout << "################# scopetimer Test #################" << "\n\n";

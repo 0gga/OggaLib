@@ -2,9 +2,9 @@
 #include <unordered_map>
 #include <vector>
 
-#include "../include/ogga/print.hpp"
+#include "ogga/print.hpp"
 
-#include "../include/ogga/scopetimer.hpp"
+#include "ogga/scopetimer.hpp"
 
 void print_test() {
 	std::cout << "################# print Test #################" << "\n\n";

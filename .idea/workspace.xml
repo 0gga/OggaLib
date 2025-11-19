@@ -33,13 +33,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="removed temporary files">
-      <change afterPath="$PROJECT_DIR$/include/ogga/random.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="fixed CMakeLists.txt and added random library">
+      <change afterPath="$PROJECT_DIR$/test/random_test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ogga/element_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/element_type.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ogga/random.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/random.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/print_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/print_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/scopetimer_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/scopetimer_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/stopwatch_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/stopwatch_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +112,9 @@
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectStatusUIService"><![CDATA[{
+  "uiKindId": "Widget"
+}]]></component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -137,7 +141,7 @@
     "dart.analysis.tool.window.visible": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/include/ogga",
+    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -156,11 +160,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\test" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\ogga" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\thread_pool" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\stopwatch" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\scopetimer" />
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\print" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\ogga" />
@@ -349,7 +353,7 @@
       <workItem from="1762889623170" duration="167000" />
       <workItem from="1763211303444" duration="59000" />
       <workItem from="1763500827692" duration="90000" />
-      <workItem from="1763548237963" duration="1619000" />
+      <workItem from="1763548237963" duration="2890000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -695,7 +699,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762637031840</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fixed CMakeLists.txt and added random library">
+      <option name="closed" value="true" />
+      <created>1763549904492</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1763549904492</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,7 +747,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added door handling and refactored users.json to config.json" />
     <MESSAGE value="Improvements - refactored most params to const&amp;" />
     <MESSAGE value="changes to readme" />
     <MESSAGE value="const&amp; fixes" />
@@ -760,7 +771,8 @@
     <MESSAGE value="path changes" />
     <MESSAGE value="readme update" />
     <MESSAGE value="removed temporary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed temporary files" />
+    <MESSAGE value="fixed CMakeLists.txt and added random library" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed CMakeLists.txt and added random library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-#include "../include/ogga/stopwatch.hpp"
+#include "ogga/stopwatch.hpp"
 
 void stopwatch_test() {
 	std::cout << "################# stopwatch Test #################" << "\n\n";

@@ -8,10 +8,9 @@ namespace ogga {
 		return gen;
 	}
 
-	template<typename T, typename Z>
-	T random(Z rangeBegin, Z rangeEnd) {
-		static_assert(std::is_arithmetic_v<T>, "T must be an arithmetic type");
-		static_assert(std::is_arithmetic_v<Z>, "Range values must be an arithmetic type");
+	template<typename T>
+	auto random(T rangeBegin, T rangeEnd, const int decimalCount = 2) {
+		static_assert(std::is_arithmetic_v<T>, "Range values must be an arithmetic type");
 
 		// Decide dist type based on (int || floating point)
 		using dist_t = std::conditional_t<
@@ -21,6 +20,12 @@ namespace ogga {
 		>;
 
 		dist_t dist(rangeBegin, rangeEnd);
+
+		if constexpr (std::is_floating_point_v<T>) {
+			T factor   = std::pow(10.0, decimalCount);
+			return std::round(dist(global_rng()) * factor) / factor;
+		}
+
 		return dist(global_rng());
 	}
 }

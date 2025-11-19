@@ -1,11 +1,13 @@
 #ifdef OGGA_DEV
 
 void print_test();
+void random_test();
 void scopetimer_test();
 void stopwatch_test();
 
 int main() {
 	print_test();
+	random_test();
 	scopetimer_test();
 	stopwatch_test();
 
