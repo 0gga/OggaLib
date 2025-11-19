@@ -33,11 +33,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="readme update">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="removed temporary files">
+      <change afterPath="$PROJECT_DIR$/include/ogga/random.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ogga/element_type.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/element_type.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/thread_pool_test.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +137,7 @@
     "dart.analysis.tool.window.visible": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/include/thread_pool",
+    "last_opened_file_path": "C:/Users/oscar/source/.repos/0ggaLib/include/ogga",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,11 +156,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\ogga" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\thread_pool" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\stopwatch" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\scopetimer" />
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\print" />
-      <recent name="C:\Users\oscar\source\.repos\0ggaLib\ogga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\oscar\source\.repos\0ggaLib\include\ogga" />
@@ -343,7 +345,11 @@
       <workItem from="1762599406277" duration="18349000" />
       <workItem from="1762634841384" duration="62000" />
       <workItem from="1762634916132" duration="1581000" />
-      <workItem from="1762636859111" duration="136000" />
+      <workItem from="1762636859111" duration="202000" />
+      <workItem from="1762889623170" duration="167000" />
+      <workItem from="1763211303444" duration="59000" />
+      <workItem from="1763500827692" duration="90000" />
+      <workItem from="1763548237963" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -681,7 +687,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762636236181</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="removed temporary files">
+      <option name="closed" value="true" />
+      <created>1762637031840</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1762637031840</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,7 +735,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="better readme" />
     <MESSAGE value="added door handling and refactored users.json to config.json" />
     <MESSAGE value="Improvements - refactored most params to const&amp;" />
     <MESSAGE value="changes to readme" />
@@ -746,7 +759,8 @@
     <MESSAGE value="stability fixes for print" />
     <MESSAGE value="path changes" />
     <MESSAGE value="readme update" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
+    <MESSAGE value="removed temporary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed temporary files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

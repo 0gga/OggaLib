@@ -14,16 +14,13 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Find threads
 find_package(Threads REQUIRED)
 
-# Collect all .c, .cpp, .h, .tpp files from src/ & include/
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp src/*.c src/*.tpp)
+# Collect all .c, .cpp, .h, .tpp files from src/
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.hpp src/*.h src/*.cpp src/*.c src/*.tpp)
 
 add_library(ogga STATIC ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
-		${PROJECT_SOURCE_DIR}/include/element_type
-		${PROJECT_SOURCE_DIR}/include/print
-		${PROJECT_SOURCE_DIR}/include/scopetimer
-		${PROJECT_SOURCE_DIR}/include/stopwatch
+		${PROJECT_SOURCE_DIR}/include
 )
 
 target_link_libraries(ogga PUBLIC Threads::Threads)
