@@ -12,20 +12,16 @@ namespace ogga {
 	auto random(T rangeBegin, T rangeEnd, const int decimalCount = 2) {
 		static_assert(std::is_arithmetic_v<T>, "Range values must be an arithmetic type");
 
-		// Decide dist type based on (int || floating point)
-		using dist_t = std::conditional_t<
-			std::is_integral_v<T>,
-			std::uniform_int_distribution<T>,
-			std::uniform_real_distribution<T>
-		>;
-
-		dist_t dist(rangeBegin, rangeEnd);
-
-		if constexpr (std::is_floating_point_v<T>) {
-			T factor   = std::pow(10.0, decimalCount);
-			return std::round(dist(global_rng()) * factor) / factor;
+		if constexpr (std::is_integral_v<T>) {
+			std::uniform_int_distribution<T> dist(rangeBegin, rangeEnd);
+			return dist(global_rng());
 		}
 
-		return dist(global_rng());
+		std::uniform_real_distribution<double> dist(static_cast<double>(rangeBegin), static_cast<double>(rangeEnd));
+
+		const double value   = dist(global_rng());
+		const double factor  = std::pow(10.0, decimalCount);
+		const double rounded = std::round(value * factor) / factor;
+		return static_cast<T>(rounded);
 	}
 }
