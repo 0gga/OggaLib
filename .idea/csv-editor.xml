@@ -122,6 +122,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\bin\minutelyLogs\2025-11-26_13-15.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\bin\minutelyLogs\2025-11-26_13.csv">
           <value>
             <Attribute>
