@@ -1,5 +1,12 @@
 # **OggaLib**<br>
 
+> ## **Currently Available Libraries**<br>
+> ogga/csvlog.hpp
+> ogga/print.hpp
+> ogga/random.hpp
+> ogga/scopetimer.hpp
+> ogga/stopwatch.hpp
+> 
 > ## **How To Use**<br>
 > To add the library to your git repository run this in project root:
 > ```
