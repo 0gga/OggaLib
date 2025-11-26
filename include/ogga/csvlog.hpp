@@ -2,6 +2,7 @@
 #include <chrono>
 #include <filesystem>
 #include <fstream>
+#include <iostream>
 #include <string>
 
 namespace ogga {
@@ -13,8 +14,20 @@ namespace ogga {
 		template<typename... Args>
 		void log(Args&&... fields);
 
+		static std::string minutely(const std::string& dir = "logs") {
+			return minute_filename(dir);
+		}
+
+		static std::string hourly(const std::string& dir = "logs") {
+			return hour_filename(dir);
+		}
+
 		static std::string daily(const std::string& dir = "logs") {
-			return today_filename(dir);
+			return day_filename(dir);
+		}
+
+		static std::string monthly(const std::string& dir = "logs") {
+			return month_filename(dir);
 		}
 
 	private: // Member Variables
@@ -22,20 +35,78 @@ namespace ogga {
 		size_t columnCount;
 
 	private: // Member Functions
-		static std::string today_filename(const std::string& dir) {
+		static std::string minute_filename(const std::string& dir) {
 			using namespace std::chrono;
 
 			const auto now         = system_clock::now();
 			const auto currentDate = floor<days>(now);
-			const std::chrono::year_month_day ymd{currentDate};
+			const year_month_day ymd{currentDate};
+
+			std::string time = now_timestamp();
+
+			int year        = static_cast<int>(ymd.year());
+			unsigned month  = static_cast<unsigned>(ymd.month());
+			unsigned day    = static_cast<unsigned>(ymd.day());
+			unsigned hour   = static_cast<unsigned>(std::stoi(time.substr(0, 2)));
+			unsigned minute = static_cast<unsigned>(std::stoi(time.substr(3, 2)));
+
+			char buf[48];
+			std::snprintf(buf, sizeof(buf), "%s/%04d-%02u-%02u_%02u-%02u.csv", dir.c_str(), year, month, day, hour, minute);
+
+			return buf;
+		}
+
+		static std::string hour_filename(const std::string& dir) {
+			using namespace std::chrono;
+
+			const auto now         = system_clock::now();
+			const auto currentDate = floor<days>(now);
+			const year_month_day ymd{currentDate};
+
+			std::string time = now_timestamp();
+
+			int year       = static_cast<int>(ymd.year());
+			unsigned month = static_cast<unsigned>(ymd.month());
+			unsigned day   = static_cast<unsigned>(ymd.day());
+			unsigned hour  = static_cast<unsigned>(std::stoi(time.substr(0, 2)));
+
+			char buf[32];
+			std::snprintf(buf, sizeof(buf), "%s/%04d-%02u-%02u_%02u.csv", dir.c_str(), year, month, day, hour);
+
+			return buf;
+		}
+
+		static std::string day_filename(const std::string& dir) {
+			using namespace std::chrono;
+
+			const auto now         = system_clock::now();
+			const auto currentDate = floor<days>(now);
+			const year_month_day ymd{currentDate};
 
 			int year       = static_cast<int>(ymd.year());
 			unsigned month = static_cast<unsigned>(ymd.month());
 			unsigned day   = static_cast<unsigned>(ymd.day());
 
-			return dir + ("/" + std::to_string(year) + "-" +
-				(month < 10 ? "0" : "") + std::to_string(month) + "-" +
-				(day < 10 ? "0" : "") + std::to_string(day) + ".csv");
+			char buf[32];
+			std::snprintf(buf, sizeof(buf), "%s/%04d-%02u-%02u.csv", dir.c_str(), year, month, day);
+
+			return buf;
+		}
+
+		static std::string month_filename(const std::string& dir) {
+			using namespace std::chrono;
+
+			const auto now         = system_clock::now();
+			const auto currentDate = floor<days>(now);
+			const year_month_day ymd{currentDate};
+
+			int year       = static_cast<int>(ymd.year());
+			unsigned month = static_cast<unsigned>(ymd.month());
+
+			char buf[32];
+			std::snprintf(buf, sizeof(buf), "%s/%04d-%02u.csv", dir.c_str(), year, month);
+
+			return buf;
 		}
 
 		static std::string now_timestamp() {
@@ -43,7 +114,7 @@ namespace ogga {
 
 			auto now = system_clock::now();
 			auto t   = system_clock::to_time_t(now);
-			int ms  = duration_cast<milliseconds>(now.time_since_epoch()).count() % 100;
+			int ms   = duration_cast<milliseconds>(now.time_since_epoch()).count() % 100;
 
 			std::tm tm{};
 #ifdef _WIN32

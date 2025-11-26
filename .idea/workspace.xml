@@ -33,8 +33,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="Clamped csvlog ms to two digits always.">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="readme.md formatting fix">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ogga/csvlog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/csvlog.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/csvlog_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/csvlog_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -342,23 +344,8 @@
       <workItem from="1763737857556" duration="353000" />
       <workItem from="1764112471031" duration="5570000" />
       <workItem from="1764118287724" duration="211000" />
-      <workItem from="1764156246201" duration="833000" />
-    </task>
-    <task id="LOCAL-00001" summary="Final touches">
-      <option name="closed" value="true" />
-      <created>1760475587158</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1760475587158</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Final touches">
-      <option name="closed" value="true" />
-      <created>1760475661234</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1760475661234</updated>
+      <workItem from="1764156246201" duration="905000" />
+      <workItem from="1764157192462" duration="2040000" />
     </task>
     <task id="LOCAL-00003" summary="better readme">
       <option name="closed" value="true" />
@@ -736,7 +723,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764156954918</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Extra test for csvlog">
+      <option name="closed" value="true" />
+      <created>1764157133798</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1764157133798</updated>
+    </task>
+    <task id="LOCAL-00051" summary="readme.md formatting fix">
+      <option name="closed" value="true" />
+      <created>1764157153269</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1764157153269</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -776,8 +779,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mutex for read/write &amp; updated readme.&#10;Also added TcpConnection::close for invalid client syntax." />
-    <MESSAGE value="Added comments in ReaderHandler implementation." />
     <MESSAGE value="Refactor formatting." />
     <MESSAGE value="Redoing CLI logic." />
     <MESSAGE value="Show IP Address on boot" />
@@ -801,7 +802,9 @@
     <MESSAGE value="Added csvlog library." />
     <MESSAGE value="Added ms to time and rename time to timestamp" />
     <MESSAGE value="Clamped csvlog ms to two digits always." />
-    <option name="LAST_COMMIT_MESSAGE" value="Clamped csvlog ms to two digits always." />
+    <MESSAGE value="Extra test for csvlog" />
+    <MESSAGE value="readme.md formatting fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme.md formatting fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
