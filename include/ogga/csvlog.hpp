@@ -16,6 +16,7 @@ namespace ogga {
 		static std::string daily(const std::string& dir = "logs") {
 			return today_filename(dir);
 		}
+
 	private: // Member Variables
 		std::ofstream out;
 		size_t columnCount;
@@ -42,6 +43,7 @@ namespace ogga {
 
 			auto now = system_clock::now();
 			auto t   = system_clock::to_time_t(now);
+			auto ms  = duration_cast<milliseconds>(now.time_since_epoch()) % 1000;
 
 			std::tm tm{};
 #ifdef _WIN32
@@ -52,7 +54,7 @@ namespace ogga {
 
 			char buf[20];
 			std::strftime(buf, sizeof(buf), "%H:%M:%S", &tm);
-			return std::string(buf);
+			return std::string(buf) + "." + std::to_string(ms.count());
 		}
 
 		static size_t detectHeaderColumnCount(const std::filesystem::path& p) {
@@ -135,7 +137,7 @@ namespace ogga {
 
 		static_assert(sizeof...(Args) > 0, "At least one column is required in csv_log");
 		if (!exists || empty)
-			writeHeader("time", std::forward<Args>(headers)...);
+			writeHeader("timestamp", std::forward<Args>(headers)...);
 	}
 
 	template<typename... Args>
