@@ -33,11 +33,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="Added ms to time and rename time to timestamp">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="Clamped csvlog ms to two digits always.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ogga/csvlog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/csvlog.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/csvlog_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/csvlog_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -345,7 +342,7 @@
       <workItem from="1763737857556" duration="353000" />
       <workItem from="1764112471031" duration="5570000" />
       <workItem from="1764118287724" duration="211000" />
-      <workItem from="1764156246201" duration="677000" />
+      <workItem from="1764156246201" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="Final touches">
       <option name="closed" value="true" />
@@ -731,7 +728,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764118491151</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Clamped csvlog ms to two digits always.">
+      <option name="closed" value="true" />
+      <created>1764156954918</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1764156954918</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -771,7 +776,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes - Black Sabbath" />
     <MESSAGE value="added mutex for read/write &amp; updated readme.&#10;Also added TcpConnection::close for invalid client syntax." />
     <MESSAGE value="Added comments in ReaderHandler implementation." />
     <MESSAGE value="Refactor formatting." />
@@ -796,7 +800,8 @@
     <MESSAGE value="Fixed random lib - floating point decimals aren't cut off by ogga::print" />
     <MESSAGE value="Added csvlog library." />
     <MESSAGE value="Added ms to time and rename time to timestamp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ms to time and rename time to timestamp" />
+    <MESSAGE value="Clamped csvlog ms to two digits always." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clamped csvlog ms to two digits always." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
