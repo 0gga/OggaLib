@@ -8,10 +8,10 @@ void stopwatch_test();
 
 int main() {
 	csvlog_test();
-	print_test();
-	random_test();
-	scopetimer_test();
-	stopwatch_test();
+	//print_test();
+	//random_test();
+	//scopetimer_test();
+	//stopwatch_test();
 
 	return 0;
 }

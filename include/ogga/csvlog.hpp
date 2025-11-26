@@ -43,7 +43,7 @@ namespace ogga {
 
 			auto now = system_clock::now();
 			auto t   = system_clock::to_time_t(now);
-			auto ms  = duration_cast<milliseconds>(now.time_since_epoch()) % 1000;
+			int ms  = duration_cast<milliseconds>(now.time_since_epoch()).count() % 100;
 
 			std::tm tm{};
 #ifdef _WIN32
@@ -52,9 +52,12 @@ namespace ogga {
 			localtime_r(&tm, &t);
 #endif
 
-			char buf[20];
+			char buf[32];
 			std::strftime(buf, sizeof(buf), "%H:%M:%S", &tm);
-			return std::string(buf) + "." + std::to_string(ms.count());
+
+			char msbuf[3];
+			std::snprintf(msbuf, sizeof(msbuf), "%02d", ms);
+			return std::string(buf) + "." + std::string(msbuf);
 		}
 
 		static size_t detectHeaderColumnCount(const std::filesystem::path& p) {

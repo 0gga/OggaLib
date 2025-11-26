@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\2025-11-28.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\bin\logs\2025-11-26.csv">
           <value>
             <Attribute>
