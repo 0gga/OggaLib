@@ -33,8 +33,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="added functionality for csvlog and fixed some bugs">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="pathing">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ogga/csvlog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/csvlog.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/csvlog_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/csvlog_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -343,15 +345,8 @@
       <workItem from="1764112471031" duration="5570000" />
       <workItem from="1764118287724" duration="211000" />
       <workItem from="1764156246201" duration="905000" />
-      <workItem from="1764157192462" duration="2213000" />
-    </task>
-    <task id="LOCAL-00004" summary="better readme">
-      <option name="closed" value="true" />
-      <created>1760478330713</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1760478330713</updated>
+      <workItem from="1764157192462" duration="2252000" />
+      <workItem from="1764250502076" duration="2981000" />
     </task>
     <task id="LOCAL-00005" summary="better readme">
       <option name="closed" value="true" />
@@ -737,7 +732,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764159277703</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="pathing">
+      <option name="closed" value="true" />
+      <created>1764159451379</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1764159451379</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -777,7 +780,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Redoing CLI logic." />
     <MESSAGE value="Show IP Address on boot" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Minor performance &amp; readability fixes." />
@@ -802,7 +804,8 @@
     <MESSAGE value="Extra test for csvlog" />
     <MESSAGE value="readme.md formatting fix" />
     <MESSAGE value="added functionality for csvlog and fixed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality for csvlog and fixed some bugs" />
+    <MESSAGE value="pathing" />
+    <option name="LAST_COMMIT_MESSAGE" value="pathing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
