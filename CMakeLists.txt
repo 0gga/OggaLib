@@ -25,13 +25,13 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 
 target_link_libraries(ogga PUBLIC Threads::Threads)
 
-option(OGGA_DEV "Enable development-only tests" OFF)
-
 file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS test/*.cpp test/*.c test/*.tpp test.cpp)
 
 add_executable(ogga_tests ${TEST_SOURCES})
 target_link_libraries(ogga_tests PRIVATE ogga)
 target_include_directories(ogga_tests PRIVATE ${PROJECT_SOURCE_DIR}/include)
+
+option(OGGA_DEV "Enable development-only tests" OFF)
 
 if (OGGA_DEV)
 	message(STATUS "Building with OGGA_DEV enabled")
