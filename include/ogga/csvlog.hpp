@@ -122,7 +122,7 @@ namespace ogga {
 #ifdef _WIN32
 			localtime_s(&tm, &t);
 #else
-			localtime_r(&tm, &t);
+			localtime_r(&tm, &tm);
 #endif
 
 			char buf[32];

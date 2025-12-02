@@ -33,9 +33,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="csvlog getMatches implemented">
+    <list default="true" id="106661c3-5992-45b9-a1bf-9a023f1d5c44" name="Changes" comment="CMake readability patch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ogga/csvlog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/ogga/csvlog.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,14 +348,8 @@
       <workItem from="1764369917039" duration="13000" />
       <workItem from="1764370127251" duration="48000" />
       <workItem from="1764370194575" duration="670000" />
-    </task>
-    <task id="LOCAL-00006" summary="added door handling and refactored users.json to config.json">
-      <option name="closed" value="true" />
-      <created>1760528273693</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1760528273693</updated>
+      <workItem from="1764370906280" duration="36000" />
+      <workItem from="1764635315234" duration="16000" />
     </task>
     <task id="LOCAL-00007" summary="Improvements - refactored most params to const&amp;">
       <option name="closed" value="true" />
@@ -741,7 +735,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764253510579</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="CMake readability patch">
+      <option name="closed" value="true" />
+      <created>1764370928755</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1764370928755</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +783,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleanup" />
     <MESSAGE value="Minor performance &amp; readability fixes." />
     <MESSAGE value="Moneygang" />
     <MESSAGE value="to_string fixes" />
@@ -806,7 +807,8 @@
     <MESSAGE value="added functionality for csvlog and fixed some bugs" />
     <MESSAGE value="pathing" />
     <MESSAGE value="csvlog getMatches implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="csvlog getMatches implemented" />
+    <MESSAGE value="CMake readability patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMake readability patch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
