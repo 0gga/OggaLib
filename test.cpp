@@ -7,8 +7,8 @@ void scopetimer_test();
 void stopwatch_test();
 
 int main() {
-	csvlog_test();
-	//print_test();
+	//csvlog_test();
+	print_test();
 	//random_test();
 	//scopetimer_test();
 	//stopwatch_test();

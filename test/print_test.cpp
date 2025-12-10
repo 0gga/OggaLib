@@ -34,7 +34,7 @@ void print_test() {
 	ogga::print(charArr, string, "\nchar: ", 'c');
 	ogga::print("Vector<literals>: ", vector, '\n', "Deque<int*>: ", deque);
 	ogga::print("pair: ", std::pair<char, std::string>('a', "bcd"));
-	ogga::print("unordered_map with %n:  \n%n", map);
+	ogga::print("unordered_map with %n:\n%n", map);
 
 	delete intptr;
 	std::cout << "\n################# print Test #################" << "\n";
